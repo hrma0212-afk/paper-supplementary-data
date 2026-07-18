@@ -1,0 +1,78 @@
+#Thermal Conductivity of ZIF
+units              real
+dimension          3
+boundary           p p p
+atom_style         full 
+bond_style         harmonic
+angle_style        harmonic
+dihedral_style     hybrid harmonic fourier
+improper_style    cvff
+#
+read_data          IRMOF1-C20-0.8.data
+#
+bond_coeff    1   177.545000      1.940000
+bond_coeff    2   177.545000      1.920000
+bond_coeff    3   673.655000      1.300000
+bond_coeff    4   389.260000      1.490000
+bond_coeff    5   462.655000      1.390000
+bond_coeff    6   357.440000      0.930000
+bond_coeff    7   389.260000      1.480000
+bond_coeff    8   386.875000      1.480000
+bond_coeff    9   482.230000      1.390000
+bond_coeff    10  381.235000      0.930000
+bond_coeff    11   330.600143      1.100000
+bond_coeff    12   300.900096      1.540000
+#
+angle_coeff   1     138.149379    112.644000
+angle_coeff   2     164.775335    106.120000
+angle_coeff   3      47.527725    109.471000
+angle_coeff   4      76.645315    129.316000
+angle_coeff   5     333.526052    126.607000
+angle_coeff   6     276.531549    116.696000
+angle_coeff   7     130.991635    120.035000
+angle_coeff   8     145.657505    119.930000
+angle_coeff   9     145.104685    120.035000
+angle_coeff   10     88.660373    120.060000
+angle_coeff   11     88.733270    119.905000
+angle_coeff   12    132.990440    120.060000
+angle_coeff   13      39.400096    107.580000
+angle_coeff   14      46.299952    109.800000
+angle_coeff   15      62.900096    111.510000
+#
+dihedral_coeff   1    harmonic     0.500000          -1           6
+dihedral_coeff   2    harmonic     1.250000          -1           2
+dihedral_coeff   3    harmonic     3.368547          -1           2
+dihedral_coeff   4    harmonic     4.871654          -1           2
+dihedral_coeff   5    fourier      1      0.150096   3    0.0000
+dihedral_coeff   6    fourier      1      0.159895   3    0.0000
+dihedral_coeff   7    fourier      3      0.179971   3    0.0000      0.250000   2  180.0000      0.200048   1  180.000
+dihedral_coeff   8    fourier      2      0.179971   3    0.0000      0.250000   2  180.0000
+dihedral_coeff   9    fourier      1      0.179971   3    0.0000
+#
+improper_coeff   1   2.000000          -1           1 #
+#
+pair_style       lj/cut/coul/long  13   #LJ力和库仑力的截断半径均为14
+kspace_style	 pppm   0.0001     #定义远程求解器   精度0.0001
+#
+pair_coeff		 1 1  0.124000   2.461553 # Zn3+2
+pair_coeff		 2 2  0.060000   3.118146 # O_3
+pair_coeff		 3 3  0.105000   3.430851 # C_2
+pair_coeff		 4 4  0.105000   3.430851 # C_R
+pair_coeff		 5 5  0.105000   3.430851 # C_1
+pair_coeff		 6 6  0.044000   2.571134 # H_
+pair_coeff		 7 7  0.015700   2.649533 # hc
+pair_coeff            8 8  0.109400   3.399670 # c3
+#
+pair_modify      mix arithmetic       #相互作用的方法  决定计算混合系数的公式
+#
+group Zn3+2  type  1
+group O_3    type  2
+group C_2    type  3
+group C_R    type  4
+group C_1    type  5
+group H_     type  6
+group IRMOF1 type 1:6
+group hc      type  7
+group c3     type  8
+group C20    type 7:8
+#

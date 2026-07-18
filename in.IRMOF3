@@ -1,0 +1,192 @@
+#Thermal Conductivity of ZIF
+units              real
+dimension          3
+boundary           p p p
+atom_style         full 
+bond_style         harmonic
+angle_style        harmonic
+dihedral_style     hybrid harmonic fourier
+improper_style    cvff
+#
+read_data          IRMOF3-C20-last.data
+#
+bond_coeff    1       177.545000      1.930000
+bond_coeff    2       177.545000      1.940000
+bond_coeff    3       177.545000      1.920000
+bond_coeff    4       764.180000      1.270000
+bond_coeff    5       459.810000      1.410000
+bond_coeff    6       523.760000      1.350000
+bond_coeff    7       462.655000      1.370000
+bond_coeff    8       357.440000      0.950000
+bond_coeff    9       645.240000      1.440000
+bond_coeff    10      456.990000      1.410000
+bond_coeff    11      545.920000      1.350000
+bond_coeff    12      381.235000      0.950000
+bond_coeff    13      588.250000      1.440000
+bond_coeff    14      527.945000      0.900000
+bond_coeff    15       330.600143      1.100000
+bond_coeff    16       300.900096      1.540000
+#
+angle_coeff   1        71.415631    111.306000
+angle_coeff   2        79.021989    107.541000
+angle_coeff   3        79.000478    107.587000
+angle_coeff   4        71.455545    111.319000
+angle_coeff   5        71.506931    111.278000
+angle_coeff   6        78.991635    107.606000
+angle_coeff   7        71.481119    111.298000
+angle_coeff   8        79.005258    107.573000
+angle_coeff   9        78.983748    107.620000
+angle_coeff   10       71.441444    111.285000
+angle_coeff   11       71.390057    111.326000
+angle_coeff   12       79.014101    107.555000
+angle_coeff   13       74.703155    132.410000
+angle_coeff   14       47.911329    109.471000
+angle_coeff   15       74.785612    132.382000
+angle_coeff   16       74.752390    132.453000
+angle_coeff   17       74.768403    132.418000
+angle_coeff   18       74.720363    132.375000
+angle_coeff   19       74.685946    132.446000
+angle_coeff   20       74.778681    132.371000
+angle_coeff   21       74.794694    132.335000
+angle_coeff   22       74.761233    132.406000
+angle_coeff   23      387.119025    123.097000
+angle_coeff   24      200.260277    118.452000
+angle_coeff   25      205.228489    123.588000
+angle_coeff   26      276.282505    112.823000
+angle_coeff   27      214.494264    123.588000
+angle_coeff   28       91.190249    119.972000
+angle_coeff   29      143.232553    116.440000
+angle_coeff   30      205.290870    123.605000
+angle_coeff   31      276.861138    112.790000
+angle_coeff   32      214.562859    123.605000
+angle_coeff   33       91.202677    119.974000
+angle_coeff   34      143.195746    116.421000
+angle_coeff   35      199.959847    118.436000
+angle_coeff   36      200.092973    118.467000
+angle_coeff   37      205.268881    123.553000
+angle_coeff   38      205.329589    123.570000
+angle_coeff   39      276.453872    112.877000
+angle_coeff   40      214.776530    123.553000
+angle_coeff   41       91.201004    120.007000
+angle_coeff   42      214.843451    123.570000
+angle_coeff   43      259.629541    124.613000
+angle_coeff   44      336.335803    111.817000
+angle_coeff   45      136.785373    119.972000
+angle_coeff   46      136.804015    119.974000
+angle_coeff   47      136.801386    120.007000
+angle_coeff   48      259.414197    124.594000
+angle_coeff   49       91.213193    120.010000
+angle_coeff   50      200.026052    118.452000
+angle_coeff   51      276.162285    112.894000
+angle_coeff   52      259.384082    124.630000
+angle_coeff   53      276.740440    112.861000
+angle_coeff   54      200.194073    118.436000
+angle_coeff   55      200.327438    118.467000
+angle_coeff   56      276.574331    112.807000
+angle_coeff   57      259.174474    124.605000
+angle_coeff   58      336.177820    111.807000
+angle_coeff   59      259.389579    124.624000
+angle_coeff   60      136.820029    120.010000
+angle_coeff   61      259.417065    124.588000
+angle_coeff   62      386.935946    123.176000
+angle_coeff   63      200.298279    118.412000
+angle_coeff   64       91.159417    120.064000
+angle_coeff   65      143.421367    116.367000
+angle_coeff   66      205.206740    123.536000
+angle_coeff   67      259.301147    124.667000
+angle_coeff   68      336.767208    111.780000
+angle_coeff   69       91.147228    120.061000
+angle_coeff   70      143.458174    116.386000
+angle_coeff   71      214.707696    123.536000
+angle_coeff   72       91.187859    120.005000
+angle_coeff   73      143.269120    116.459000
+angle_coeff   74      386.935707    123.176000
+angle_coeff   75      200.232075    118.397000
+angle_coeff   76      200.365440    118.427000
+angle_coeff   77       91.134560    120.059000
+angle_coeff   78      143.492830    116.405000
+angle_coeff   79      259.066922    124.671000
+angle_coeff   80      336.450765    111.759000
+angle_coeff   81       88.880258    119.990000
+angle_coeff   82      147.119025    116.441000
+angle_coeff   83      146.940249    116.457000
+angle_coeff   84      259.058556    124.683000
+angle_coeff   85      259.306644    124.661000
+angle_coeff   86      336.608987    111.770000
+angle_coeff   87       84.528920    120.045000
+angle_coeff   88       84.509321    119.983000
+angle_coeff   89       74.114962    119.972000
+angle_coeff   90       84.462237    120.036000
+angle_coeff   91       84.570029    120.005000
+angle_coeff   92       74.158222    119.959000
+angle_coeff   93       84.598470    119.955000
+angle_coeff   94       74.139818    120.000000
+angle_coeff   95       84.474665    119.981000
+angle_coeff   96       84.472275    120.015000
+angle_coeff   97       74.100860    120.004000
+angle_coeff   98       84.541348    119.990000
+angle_coeff   99       84.410851    119.993000
+angle_coeff   100      74.057361    120.017000
+angle_coeff   101      84.382648    120.043000
+angle_coeff   102      74.075765    119.976000
+angle_coeff   103      74.003585    120.009000
+angle_coeff   104      84.566683    119.999000
+angle_coeff   105      84.469407    120.070000
+angle_coeff   106      74.133365    119.931000
+angle_coeff   107      73.978489    119.981000
+angle_coeff   108      84.592256    119.889000
+angle_coeff   109      84.361616    120.063000
+angle_coeff   110      74.043499    120.048000
+angle_coeff   111      84.500478    119.965000
+angle_coeff   112      73.946224    120.054000
+angle_coeff   113      84.558556    120.042000
+angle_coeff   114      84.420172    120.010000
+angle_coeff   115      73.953633    119.954000
+angle_coeff   116      84.579111    119.944000
+angle_coeff   117      84.460086    120.052000
+angle_coeff   118        39.400096    107.580000
+angle_coeff   119        46.299952    109.800000
+angle_coeff   120        62.900096    111.510000
+#
+dihedral_coeff   1    harmonic     0.500000          -1           6
+dihedral_coeff   2    harmonic     1.250000          -1           2
+dihedral_coeff   3    harmonic     3.368547          -1           2
+dihedral_coeff   4    harmonic     4.871654          -1           2
+dihedral_coeff   5    harmonic     0.250000          -1           6
+dihedral_coeff   6    harmonic     0.244025           1           3
+dihedral_coeff   7    fourier      1      0.150096   3    0.0000
+dihedral_coeff   8    fourier      1      0.159895   3    0.0000
+dihedral_coeff   9    fourier      3      0.179971   3    0.0000      0.250000   2  180.0000      0.200048   1  180.0000
+dihedral_coeff   10   fourier      2      0.179971   3    0.0000      0.250000   2  180.0000
+dihedral_coeff   11   fourier      1      0.179971   3    0.0000
+#
+improper_coeff   1          2.000000          -1           1 #
+#
+pair_style       lj/cut/coul/long  13  #LJ力和库仑力的截断半径均为14
+#special_bonds lj 0.0 0.0 0.5 coul 0.0 0.0 0.8333
+kspace_style	 pppm   0.0001     #定义远程求解器   精度0.0001
+#
+pair_coeff		 1 1  0.124000   2.461553 # Zn3+2
+pair_coeff		 2 2  0.060000   3.118146 # O_3
+pair_coeff		 3 3  0.105000   3.430851 # C_2
+pair_coeff		 4 4  0.105000   3.430851 # C_R
+pair_coeff		 5 5  0.105000   3.430851 # C_1
+pair_coeff		 6 6  0.069000   3.260689 # N_3
+pair_coeff		 7 7  0.044000   2.571134 # H_
+pair_coeff            8 8  0.015700   2.649533 # hc
+pair_coeff            9 9  0.109400   3.399670 # c3
+#
+pair_modify      mix arithmetic       #相互作用的方法  决定计算混合系数的公式
+#
+group Zn3+2  type  1
+group O_3    type  2
+group C_2    type  3
+group C_R    type  4
+group C_1    type  5
+group N_3    type  6
+group H_     type  7
+group IRMOF3 type 1:7
+group hc     type  8
+group c3     type  9
+group C20    type 8:9
+#
